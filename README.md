@@ -1,31 +1,61 @@
 # Scholarly
 
+The repository of Scholarly's Website
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 
-## Installing
+## Initial Steps
 
-Run `npm install` to install all required dependencies for this project.
+### 1.0 Installing all required dependencies
 
-## Development server
+Please run `npm install` and wait for everything to be done.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### 2.0 Running the development server
 
-## Code scaffolding
+Run `npm start` for Angular to run a development server.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Contributing
 
-## Build
+### Things to take note
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+- Scholarly's website is built upon __Angular 5__. Please contribute using proper __Angular 5__ code.
+- Scholarly's CSS Framework is __MaterializeCSS__. Please contribute using proper __MaterializeCSS__ syntax.
+- You can change how the styling looks without __MaterializeCSS__, but please stick as close to __MaterializeCSS__ as possible.
 
-## Running unit tests
+### Generating components
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng g component <Component Name>` to generate a new component.
 
-## Running end-to-end tests
+Help:
+- `g` is short for `generate`.
+- Components are __not__ only pages. You can create __Navbars, Widgets and etc__ with it.
+- More help here: [Angular 5 Generate Command](https://github.com/angular/angular-cli/wiki/generate).
+
+### Project Linting
+
+Run `ng lint` to ensure cleanliness.
+
+Help:
+- If files did not pass __linting__ tests, please see what needs to be changed.
+- More help here: [Angular 5 Linting Command](https://github.com/angular/angular-cli/wiki/lint).
+
+### Project Testing
+
+Run `ng test` to execute tests via [Karma](https://karma-runner.github.io).
+
+Do know that it will display lots of errors, but doesn't matter.
+
+### End-To-End Testing
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+Do know that it will display lots of errors, but doesn't matter.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Code stability
+
+This is the last step you need to make sure before you __push__ your contribution to us.
+Ensure that your code is stable, no errors, formatting is good, linting is fine.
+
+### Pushing
+
+If all is well, you're done. Just send us a __push__ request and we'll review it!
+Thank you for your contribution.
