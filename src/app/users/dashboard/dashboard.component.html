@@ -1,0 +1,47 @@
+<div *ngIf="auth.user | async; then authenticated else guest"></div>
+
+<ng-template #guest>
+  <div class="section">
+    <div class="row container center">
+      <h2 class="header center">Please Login</h2>
+
+      <div class="col s6">
+        <button class="waves-effect waves-light btn blue" (click)="auth.googleLogin()">
+          <i class="fa fa-google left"></i>Connect Google
+        </button>
+      </div>
+      <div class="col s6">
+        <button class="waves-effect waves-light btn black" (click)="auth.githubLogin()">
+          <i class="fa fa-github left"></i> Connect GitHub
+        </button>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #authenticated>
+  <div class="section" *ngIf="auth.user | async as user">
+    <div class="row container">
+
+      <div class="col s12">
+        <div class="card horizontal">
+          <div class="card-image">
+            <img [src]="user.photoURL" alt="Profile Picture" width="200" height="200">
+          </div>
+
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>User ID: {{ user.uid }}</p>
+              <p>Display Name: {{ user.displayName }}</p>
+            </div>
+            <div class="card-action">
+              <a (click)="auth.signOut()">Logout</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</ng-template>
