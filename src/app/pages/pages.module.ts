@@ -8,7 +8,6 @@ import { AboutUsComponent } from '../about-us/about-us.component';
 import { ContactUsComponent } from '../contact-us/contact-us.component';
 import { DashboardComponent } from '../users/dashboard/dashboard.component';
 
-
 @NgModule({
   imports: [
     CommonModule
@@ -19,7 +18,8 @@ import { DashboardComponent } from '../users/dashboard/dashboard.component';
     MembersComponent,
     AboutUsComponent,
     ContactUsComponent,
-    DashboardComponent
+    DashboardComponent,
+    TestComponent
   ]
 })
 export class PagesModule { }
