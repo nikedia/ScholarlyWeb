@@ -23,10 +23,17 @@ Run `npm start` for Angular to run a development server.
 
 ### Generating components
 
-Run `ng g component <Component Name>` to generate a new component.
+#### Generating a Widget
+Run `ng g component <Component Name>` to generate a new Widget Component.
+
+#### Generating a Page
+
+Run `ng g component <Component Name> -m pages` to generate a new Page Component.
 
 Help:
 - `g` is short for `generate`.
+- `m` is short for `module`.
+- Pages are stored inside the `PagesModule`. Please run commands as followed.
 - Components are __not__ only pages. You can create __Navbars, Widgets and etc__ with it.
 - More help here: [Angular 5 Generate Command](https://github.com/angular/angular-cli/wiki/generate).
 
@@ -57,5 +64,17 @@ Ensure that your code is stable, no errors, formatting is good, linting is fine.
 
 ### Pushing
 
+#### Team Developers
+
+If all is well, you're done. Push the changes to __staging__ branch instead of __master__.
+
+Command: `git checkout -b staging && git push -u origin staging`.
+
+#### Outside Developers
+
 If all is well, you're done. Just send us a __push__ request and we'll review it!
 Thank you for your contribution.
+
+### Communicate with us
+
+Here's our [Discord](https://discord.gg/nXkdhSB) Server link, join it and meet us.
