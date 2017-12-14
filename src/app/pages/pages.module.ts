@@ -18,8 +18,7 @@ import { DashboardComponent } from '../users/dashboard/dashboard.component';
     MembersComponent,
     AboutUsComponent,
     ContactUsComponent,
-    DashboardComponent,
-    TestComponent
+    DashboardComponent
   ]
 })
 export class PagesModule { }
