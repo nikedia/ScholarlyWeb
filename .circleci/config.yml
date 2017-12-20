@@ -12,9 +12,9 @@ jobs:
       - restore_cache:
           keys:
           - v1-dependencies-{{ checksum "package.json" }}
-      - run: yarn install
+      - run: npm install
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      - run: yarn ng build --prod --env=prod --no-progress
+      - run: npm ng build --prod --env=prod --no-progress
