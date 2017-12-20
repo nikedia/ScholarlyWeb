@@ -11,7 +11,7 @@ branches:
 before_script:
   - npm install -g @angular/cli
   - npm install -g typings
-  - typings install firebase
+  - typings install firebase --ambient --save
 
 script:
-  - ng build --prod --env=prod --aot
+  - ng build --prod --env=prod
